@@ -11,11 +11,14 @@ public class NahodnaPermutaceDoN {
         Scanner sc = new Scanner(System.in);
         int n;
         int a[];
+        System.out.println("K ukončení programu napište 0");
+        do {
         System.out.println("Zadejte kládné číslo n menší než 1000");
         n = sc.nextInt();
         a = GenerateArray(n);
         print(a);
-        
+        }
+        while (n > 0);
     }
 
     public static int[] GenerateArray(int n){
@@ -41,6 +44,7 @@ public class NahodnaPermutaceDoN {
         for (int i = 0; i < a.length; i++){
             System.out.print(a[i] + " ");
         }
+        System.out.println("");
     }
     
 }
